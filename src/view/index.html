@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MMall</title>
-</head>
-<body>
-  <div>
-    <h1>电商首页</h1>
-  </div>
-</body>
+  <head>
+  <%= require('html-loader!./layout/head-common.html') %>
+  <title>Ely's Mall</title>
+  </head>
+  <body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="w">
+      <%= require('html-loader!./layout/nav-side.html') %>
+      <div class="content with-nav"></div>
+    </div>
+  <%= require('html-loader!./layout/footer.html') %>
+  </body>
 </html>
