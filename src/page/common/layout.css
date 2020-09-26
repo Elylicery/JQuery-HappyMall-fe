@@ -2,7 +2,7 @@
  * @Author: Xiaochun 
  * @Date: 2020-09-17 21:37:50 
  * @Last Modified by: Xiaochun
- * @Last Modified time: 2020-09-18 09:26:03
+ * @Last Modified time: 2020-09-25 21:47:46
  */
 
  /*css reset*/
@@ -39,6 +39,24 @@
    position: relative;/*如果容器里有需要绝对定位的东西*/
    overflow: hidden;/*清除浮动，保证外层容器的高度会被里面的高度撑起来*/
  }
+
+ /* panel */
+.panel{
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.panel .panel-title{
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+  padding: 10px;
+  overflow: hidden;
+}
 
  .large .w{
    width: 1600px;/*为大的浏览器设置,这种方式可以兼容IE*/

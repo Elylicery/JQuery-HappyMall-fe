@@ -2,7 +2,7 @@
  * @Author: Xiaochun 
  * @Date: 2020-09-18 10:50:16 
  * @Last Modified by: Xiaochun
- * @Last Modified time: 2020-09-18 11:19:50
+ * @Last Modified time: 2020-09-25 21:39:53
  */
 
 /* 通用头部导航 */
@@ -33,4 +33,15 @@
 .header .search-con .search-btn{
   position: absolute;
   height: 44px;
+}
+
+/* 面包屑导航 */
+.crumb{
+  margin-bottom: 15px;
+  height: 50px;
+  line-height: 50px;
+  background: #eee;
+  color: #888;
+  font-size: 14px;
+  border-top: 2px solid #c60023;
 }
