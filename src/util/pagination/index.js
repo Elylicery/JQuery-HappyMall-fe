@@ -1,8 +1,8 @@
 /*
 * @Author: Rosen
 * @Date:   2017-05-28 11:58:08
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-28 15:36:16
+ * @Last Modified by: Xiaochun
+ * @Last Modified time: 2020-10-22 20:45:07
 */
 
 'use strict';
@@ -73,6 +73,7 @@ Pagination.prototype.getPaginationHtml = function(){
         value : this.option.nextPage,
         disabled : !this.option.hasNextPage
     });
+    //开始渲染
     html = _mm.renderHtml(templatePagination, {
         pageArray   : pageArray,
         pageNum     : option.pageNum,
@@ -81,4 +82,5 @@ Pagination.prototype.getPaginationHtml = function(){
     return html;
 };
 
+//导出模块
 module.exports = Pagination;

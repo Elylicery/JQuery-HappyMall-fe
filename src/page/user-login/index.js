@@ -2,7 +2,7 @@
 * @Author: Rosen
 * @Date:   2017-05-08 22:26:19
  * @Last Modified by: Xiaochun
- * @Last Modified time: 2020-09-26 18:27:31
+ * @Last Modified time: 2020-10-22 16:04:30
 */
 
 'use strict';
@@ -51,7 +51,8 @@ var page = {
     // 验证成功
     if (validateResult.status) {
       _user.login(formData, function (res) {
-        //window.location.href = _mm.getUrlParam('redirect') || './index.html';
+        //FIXME:获取个人信息有问题
+        window.location.href = _mm.getUrlParam('redirect') || './index.html';
         console.log("登陆成功!",formData.username,formData.password);
         //localStorage.setItem("username",formData.username);
       }, function (errMsg) {
